@@ -1,0 +1,241 @@
+\subsection*{Automatización Industrial}
+
+La automatización ha sido de gran importancia para el desarrollo de nuestra tecnología y para la producción en masa, rápida y eficiente. Según G. Lorenzo \cite{lorenzo2009automatizacion} los Ktesibios fueron los pioneros en la creación de sistemas automáticos en el 300 AC. El mecanismo consistía en un regulador de flotador el cual tenía como objetivo controlar la entrada de agua a un reloj de agua, mediante una válvula, a partir de esa época se han desarrollado diversos mecanismos y sistemas para poder realizar las tareas repetitivas y de precisión, hasta llegar a la automatización moderna. Según la investigación realizada por P. Ponsa \cite{ponsa2009diseno} la definición de La Real Academia de las Ciencias Físicas y Exactas la \textit{automática} es el conjunto de métodos y procedimientos para la substitución del operario en tareas físicas y mentales previamente programadas. Posteriormente G. Lorenzo \cite{lorenzo2009automatizacion} define el concepto de la \textit{automatización} con tres rasgos básicos: El primero indica que el control automáticos de la fabricación de un producto se realiza en un número de etapas sucesivas. Luego menciona como segundo rasgo es que el control automático se puede aplicar a cualquier rama de la ciencia o su aplicación en la industria. Como tercer y último rasgo es la combinación de los dos anteriores, siendo este la posibilidad de el empleo de dispositivos electrónicos o mecánicos para sustituir el trabajo humano.
+
+Con estas definiciones se obtiene que la \textit{automatización} es la aplicación de la \textit{automática} en el control de los procesos industriales. Estos procesos son todas las tareas que realiza la maquina y el operario para llegar al producto final. Estos a su vez se pueden dividir en diferentes tipos. Se le conoce a procesos discretos a los que contemplan la salida del procesos en forma de unidades o una cantidad delimitada de piezas. Los procesos continuos son lo que poseen una salida del mismo de manera continua, como la extracción de petróleo. Por último, los procesos batch son los que poseen salidas en forma de lotes, o cantidades limitadas e identificables.
+
+De esta forma se puede tener una idea más clara de lo que realiza la automatización industrial, aún así existe una subdivisión de la misma según G. Lorenzo \cite{lorenzo2009automatizacion}:
+
+
+\begin{itemize}
+  \item \textbf{Automatización fija}: Esta consisten en la fabricación continua de un mismo producto en grandes cantidades. Las restricciones que presentan los equipos de fabricación van a poder condicionar la secuencia de la producción. Por esta razón, este tipo de automatización presenta las siguientes características: 
+  \begin{itemize}
+  \item Esta constituida por una secuencia sencilla de operaciones.
+  \item Requiere una gran inversión debido a la gran demanda de los equipos especializados.
+  \item Tiene elevados ritmos de producción.
+  \item Es difícil su adaptación a las variaciones de la demanda.
+  \end{itemize}
+  
+  \item \textbf{Automatización programable}: Realiza la fabricación de productos pero en pequeñas cantidades y aun costo bajo, permitiendo esto a su vez la programación para realizar diferentes tareas. Como consecuencia esta da una gran flexibilidad que a su vez da lugar a una gran cantidad de información que puede ser computable. Esta se puede aplicar en sistemas de fabricación en donde el equipo de producción esta diseñado para poder realizar cambios en la secuenciad de las operaciones según los diferentes producto. Posee las siguientes características:
+  \begin{itemize}
+  \item Posee una existencia de u periodo previo a la fabricación de los distintos lotes.
+  \item Para poder realizar los lotes de productos distintos, se introducen los cambios en el programa y en la configuración física de la máquina o de los elementos/actuadores.
+  \item Es necesaria realizar una gran inversión en equipos de aplicación general, como en máquinas de control numérico.
+  \item El ejemplo más claro de este tipo de automatización son los Controladores Lógicos Programables (PLC).
+  \end{itemize}
+  
+  \item \textbf{Automatización flexible}: Esta surge con el objetivo de complementar algunas de la deficiencias de la automatización programable. Tiene la capacidad de producir cambios en los programas y en las relaciones que existen entre los elementos del sistema de producción. El mejor ejemplo de automatización flexible son las máquinas de control numérico.
+  
+  \item \textbf{Automatización Integrada}: Esta es la combinación de distintos tipos de automatización integrada en un sistema productivo. Esta presenta las siguientes características:
+   \begin{itemize}
+  \item Se logra reducir el tamaño de los lotes.
+  \item Existe una mayor diversificación del producto.
+  \item Posee una producción más rápida, con implementación en procesos de producción discretos y continuos.
+  \end{itemize}
+\end{itemize}
+
+
+\subsection*{Tablero Industrial}
+
+Un tablero industrial se compone de diferentes elementos, según E. Valadez \cite{valadez2002tablero} básicamente este es una terminal, en donde por medio de interruptores, las diversas señales que se generan en un proceso industrial son recibidas por las terminales de entrada de un Controlador Lógico Programable (PLC). Este a su vez procesa la información y por medio de las salidas hace funcionar a los actuadores para llevar a cabo la tarea deseada.
+
+Según L. Tumbaco \cite{tumbaco2013diseno} un PLC o Autómata Programable posee las herramientas necesarias para poder controlar dispositivos externos, recibir señales de sensores y lograr tomar las decisiones conforme a un programa previamente realizado por el usuario para que elabore para el control de un sistema o proceso. Esto lo logra por medio de sus capacidades tanto de hardware como de software.
+
+Un PLC se compone a su vez de varios elementos. Según indica L. Tumbaco \cite{tumbaco2013diseno} este cuenta con un CPU, con la memoria, el cual posee conexiones con el bloque de entradas, bloque de salidas, fuente de alimentación y las interfases. Este último es el encargado para la interconexión entre el CPU y la consola de programación, al igual que con los dispositivos periféricos. Al bloque de entradas llegan los dispositivos de entrada o captadores, por otra parte, al bloque de salidas se anexan los dispositivos de salida o lo actuadores. A continuación se explica detalladamente el funcionamiento de cada uno según L. Tumbaco \cite{tumbaco2013diseno}:
+
+ \begin{itemize}
+  \item \textbf{CPU}: Se encarga de realizar las operaciones de tiempo, siendo estos trabajos con retardo o temporizado, de secuencia, de combinación, de auto mantenimiento y de retención.
+  \item \textbf{Interfaces de entrada y salida}:  Destinados en establecer la comunicación entre la CPU y el proceso. Esto cumpliendo funciones tales como el filtrado, adaptación y amplificación de las señales de la salida, generadas por el programa.
+  \item \textbf{Memoria}: Permite el almacenamiento de datos del programa (RAM), el sistema operativo (ROM), programa de usuario (RAM no volátil), configuración de PLC (ROM o RAM no volátil), rutinas de arranque (ROM) y por último las rutinas de chequeo (ROM).
+  \item \textbf{Programador}:Es el encargado de trasladar el programa previamente elaborado por el usuario al PLC, con el fin de controlar los procesos designados.
+  \end{itemize}
+
+
+
+A su vez, existen varios tipos de PLC, según L. Tumbaco \cite{tumbaco2013diseno}  se subdivide en 2 grupos:
+ \begin{itemize}
+  \item \textbf{Compactos}: Estos están compuestos por un solo bloque donde se encuentra tanto la CPU como la fuente de alimentación, la sección de entradas, salidas y por ultimo el puerto de comunicación. Normalmente este tipo de PLC se utiliza cuando el proceso no es muy complejo o la cantidad de entradas o salidas es bastante pequeña.
+   \item \textbf{Modular}:  Existen dos tipos de estructura, la americana y la europea. En la primera se separan los módulos de entrada y salida del resto del PLC. La segunda cuenta con módulos que realizan funciones específicas, siendo módulos separados el CPU, la fuente de alimentación y así sucesivamente. 
+  \end{itemize}
+  
+Los tableros a su vez se componen de de rieles de fijación, estos son los encargados de sostener y mantener en su lugar, de una manera segura, los componentes del tablero. En estos se realizan las conexiones de los módulos con el exterior.
+
+\subsubsection*{Entrada y salida analógica}
+
+Según G. Valls \cite{valls2011fundamentos} la definición de una señal consiste en aquella cantidad física  que varía con e tiempo, espacio o cualquier otras variables independientes. Por otro lado, un sistema, en este contexto G. Valls \cite{valls2011fundamentos} lo define como todo dispositivo que transforma una señal en otra. Con ello se define un sistema eléctrico como el conjunto de dispositivos electrónicos interconectados y alimentados entre sí, con una o varías fuentes de voltaje, esto con el fin de realizar una función determinada. Con estos conceptos finalmente G. Valls \cite{valls2011fundamentos} menciona que las señales eléctricas son las tensiones o corrientes, variables en el tiempo, que están presentes en un sistema eléctrico y transportan información. Estas a su vez, se dividen en dos grupos:
+
+ \begin{itemize}
+  \item \textbf{Señales analógicas}: Una señal se puede expresar mediante una función matemática del tipo $v = f(t)$, en la cual $t$ se refiere al tiempo y $v$ es una tensión eléctrica. En estos casos, cuando $f(t)$ es uniforme y derivables se puede decir que $f(t)$ es analógica. Estas poseen tres propiedades básicas, siendo estas la periodicidad, unicidad y oscilación.
+   \item \textbf{Señales digitales}: Para poder obtenerlas es necesario primero realizar un muestreo de una señal analógica. Se debe de realizar un muestro en tiempo y una cuantificación en amplitud. Con este proceso se obtienen valores discretos de una señal.
+  \end{itemize}
+
+Ahora que ya están definidas los tipos de señales electrónicas, se pueden describir los módulos utilizados en el PLC para la lectura y procesamiento de las mismas. Cómo se mencionó anteriormente, el PLC cuenta con módulos de entrada y salida. Ya que el énfasis de esta investigación son los módulos analógicos, a continuación se listan los utilizados. Los modelos de entrada analógica a utilizar serán los 6ES7331-7KF02-0AB0 y 6ES7315-2EH14-0AB0. Este primero posee 8 entradas analógicas con una resolución de 9/12/14 bits. De igual manera acepta la lectura de voltaje, corriente, termocopla y de resistencia. Los detalles de su ficha técnica del módulo 6ES7331-7KF02-0AB0 se pueden observar en el cuadro \ref{cuadro:EntradaA}, de igual manera se puede observar en el cuadro \ref{cuadro:SalidaA}
+de la iformación técnica del módulo 6ES7332-5HF00-0AB0.
+
+\newpage
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Voltaje de alimentación}}                                                     \\ \hline
+\multicolumn{1}{|l|}{Voltaje de alimentación DC}                           & \multicolumn{1}{l|}{24 V}  \\ \hline
+\multicolumn{1}{|l|}{Protección contra polaridad inversa}                  & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Corriente de entrada}}                                                     \\ \hline
+\multicolumn{1}{|l|}{Desde el voltaje de la carga (sin carga) max.}        & \multicolumn{1}{l|}{30 mA} \\ \hline
+\multicolumn{1}{|l|}{Desde el bus posterior de 5 V DC max}                 & \multicolumn{1}{l|}{50 mA} \\ \hline
+\multicolumn{2}{|c|}{\textbf{Entradas Analógicas}}                                                      \\ \hline
+\multicolumn{1}{|l|}{Número de entradas analógicas}                        & \multicolumn{1}{l|}{8}     \\ \hline
+\multicolumn{1}{|l|}{Para la medición de resistencia}                      & \multicolumn{1}{l|}{4}     \\ \hline
+\multicolumn{2}{|c|}{\textbf{Rangos para la medición de voltaje}}                                       \\ \hline
+\multicolumn{1}{|l|}{1 V a 5 V con resistencia de entrada de 100 $\Omega$}        & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-1 V a 1 V con resistencia de entrada de 10 M$\Omega$}       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-10 V a 10 V con resistencia de entrada de 100 k$\Omega$}    & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-2.5 V a 2.5 V con resistencia de entrada de 100 k$\Omega$}  & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-250 mV a 250 mV con resistencia de entrada de 10 M$\Omega$} & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-5 V a 5 V con resistencia de entrada de 100 k$\Omega$}      & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-500 mV a 500 mV con resistencia de entrada de 10 M$\Omega$} & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-80 mV a 80 mV con resistencia de entrada de 10 M$\Omega$}   & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Rangos para la medición de corriente}}                                     \\ \hline
+\multicolumn{1}{|l|}{0 a 20 mA con resistencia de entrada de 25 $\Omega$}         & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-10 mA a 10 mA con resistencia de entrada de 25 $\Omega$}    & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-20 mA a 20 mA con resistencia de entrada de 25 $\Omega$}    & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{-3.2 mA a 3.2 mA con resistencia de entrada de 25 $\Omega$}  & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{4 mA a 20 mA con resistencia de entrada de 25 $\Omega$}      & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Tipos de termocoplas complatibles}}                                        \\ \hline
+\multicolumn{1}{|l|}{Tipo B}                                               & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo C}                                               & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo E con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo J con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo K con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo L con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Tipo N con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Tipos de termómetros resistivos compatibles}}                              \\ \hline
+\multicolumn{1}{|l|}{Ni 100 con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{Pt 100 con resistencia de 10 M$\Omega$}                       & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Rangos para la medición de resistencia}}                                    \\ \hline
+\multicolumn{1}{|l|}{De 0 a 150 $\Omega$ con una resistencia de entrada de 10 M$\Omega$} & \multicolumn{1}{l|}{Si}    \\ \hline
+\multicolumn{1}{|l|}{De 0 a 300 $\Omega$ con una resistencia de entrada de 10 M$\Omega$} & \multicolumn{1}{l|}{Si}    \\ \hline
+De 0 a 600 $\Omega$ con una resistencia de entrada de 10 M$\Omega$                       & Si                         \\ \hline
+\end{tabular}
+\caption{Datos relevantes de la ficha técnica del módulo SIEMENS 6ES7331-7KF02-0AB0.}
+\label{cuadro:EntradaA}
+\end{table}
+
+\newpage
+
+% Please add the following required packages to your document preamble:
+%\usepackage{multirow}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Voltaje de alimentación}}                                                                                                                            \\ \hline
+Voltaje de alimentación DC                                                                  & 24 V                                                                               \\ \hline
+Protección contra polaridad inversa                                                         & Si                                                                                 \\ \hline
+\multicolumn{2}{|c|}{\textbf{Corriente de entrada}}                                                                                                                              \\ \hline
+Desde el voltaje de la carga (sin carga) max.                                               & 340 mA                                                                             \\ \hline
+Desde el bus posterior de 5 V DC max                                                        & 100 mA                                                                             \\ \hline
+\multicolumn{2}{|c|}{\textbf{Salidas Analógicas}}                                                                                                                                \\ \hline
+Número de entradas analógicas                                                               & 8                                                                                  \\ \hline
+Salida de voltaje con protección contra corto circuito                                      & Si                                                                                 \\ \hline
+Salida de voltaje, corriente máxima de corto circuito                                       & 25 mA                                                                              \\ \hline
+Salida de corriente , voltaje sin carga máximo                                              & 18 V                                                                               \\ \hline
+\multicolumn{1}{|c|}{\textbf{Rangos de salida de voltaje}}                                  &                                                                                    \\ \hline
+0 V a 10 V                                                                                  & Si                                                                                 \\ \hline
+1 V a 5 V                                                                                   & Si                                                                                 \\ \hline
+-10 V a 10 V                                                                                & Si                                                                                 \\ \hline
+\multicolumn{2}{|c|}{\textbf{Rangos de salida de corriente}}                                                                                                                     \\ \hline
+0 a 20 mA                                                                                   & Si                                                                                 \\ \hline
+-20 mA a 20 mA                                                                              & Si                                                                                 \\ \hline
+4 mA a 20 mA                                                                                & Si                                                                                 \\ \hline
+\multicolumn{2}{|c|}{\textbf{Impedancia de la carga}}                                                                                                                            \\ \hline
+Con salida de voltaje min.                                                                  & 1 k$\Omega$                                                                                \\ \hline
+Con salida de voltaje, carga capacitiva max.                                                & 1 F                                                                                \\ \hline
+Con salida de corriente max.                                                                & 500 $\Omega$                                                                                \\ \hline
+Con salida de corriente, carga inductiva max.                                               & 10 mH                                                                              \\ \hline
+\multicolumn{2}{|c|}{\textbf{Generación analógicos para la salida}}                                                                                                              \\ \hline
+\multicolumn{1}{|c|}{\multirow{Resolución con sobre rango, incluyendo el signo max.}} & \begin{tabular}[c]{@{}l@{}}12 bit; ±10 V, ±20 mA, \\ \\ 4 mA a 20 mA\end{tabular} \\ \cline{2-2} 
+\multicolumn{1}{|c|}{}                                                                      & 1 V to 5 V: 11 bit + signo                                                         \\ \cline{2-2} 
+\multicolumn{1}{|c|}{}                                                                      & \begin{tabular}[c]{@{}l@{}}0 V to 10 V, \\ \\ 0 mA a 20 mA: 12 bit\end{tabular}    \\ \hline
+Tiempo de conversión (por canal)                                                            & 0.8 ms                                                                             \\ \hline
+\multicolumn{2}{|c|}{\textbf{Tiempo de estabilización}}                                                                                                                          \\ \hline
+Para carga resistiva                                                                        & 0.2 ms                                                                             \\ \hline
+Para carga capacitiva                                                                       & 3.3 ms                                                                             \\ \hline
+Para carga inductiva                                                                        & \begin{tabular}[c]{@{}l@{}}0.5 ms; 0.5 ms (1 mH);\\  3.3 ms (10 mH)\end{tabular}   \\ \hline
+\end{tabular}
+\caption{Datos relevantes de la ficha técnica del módulo SIEMENS 6ES7332-5HF00-0AB0.}
+\label{cuadro:SalidaA}
+\end{table}
+
+Para organizar estos elementos en tablero industrial es necesario el uso de rieles. Estos se ensamblan por medio de tornillos a la parte interna del tablero, en ellos se pueden instalar el autómata programable y sus módulos al igual que las terminales. Para que este tenga una apariencia ordenada son usadas las canaletas, de esta forma los cables no son visibles.
+
+
+\subsubsection{Norma de Cableado y Etiquetado}
+Luego de conocer el elemento encargado de realizar el procesamiento de las señales, es importante recordar que para las conexiones son importantes el uso de normas para que estos cumplan con los requerimientos de seguridad necesarios. Específicamente la norma que se enfoca en la identificación de conductores por colores y código alfanumérico  es la IEC60446. Según la norma IEC60446 \cite{IEC:60446:2007}, esta regula las reglas en el uso del color o identificaciones para evitar la ambigüedad y asegurar la operación segura de los mismos. Estas regulaciones está destinada al uso de cables, núcleos, equipo eléctrico e instalaciones. 
+
+Los colores permitidos para los cables son:
+
+\begin{itemize}
+  \item Negro
+  \item Café
+  \item Rojo
+  \item Naranja
+  \item Amarillo
+  \item Verde
+  \item Azul
+  \item Violeta
+  \item Gris
+  \item Blanco
+  \item Rosado
+  \item Turquesa
+  \end{itemize}
+  
+  Los colores se deben de utilizar en las terminales o en toda la longitud del cable preferiblemente, ya sea por aislantes o marcadores de colores, excepto en condiciones donde se encuentran los conductores solamente. donde la identificación de color debe de ser en las terminales y puntos de conexión.
+  
+  Para conductores que poseen fases de AC se recomienda los siguientes colores:
+  
+  \begin{itemize}
+  \item Negro
+  \item Café
+  \item Gris
+  \end{itemize}
+  
+  De igual forma la combinación de colores es permitida toda vez no se confunda con los demás y no combine el amarillo y el verde.
+  
+  En la parte de identificación alfanumérica la norma CITAR IEC60446 dicta que la identificación debe de ser clara, legible y duradera. Asimismo estos deben de poseer un fuerte contraste con el color del aislante y debe de estar en numerales arábigos. Para evitar confusiones, los numerales 6 y 9 deben de estar subrayados. Los identificadores para cada conductor se observan en el cuadro \ref{cuadro:IdentificadoresA}.
+  
+  \begin{table}[h]
+  \centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Identificadores Alfanuméricos}}                           \\ \hline
+\multicolumn{1}{|c|}{\textbf{Conductor}} & \multicolumn{1}{c|}{\textbf{Identificador}} \\ \hline
+Neutral                                  & N                                           \\ \hline
+Protección                               & PE                                          \\ \hline
+PEN                                      & PEN                                         \\ \hline
+PEL                                      & PEL                                         \\ \hline
+PEM                                      & PEM                                         \\ \hline
+Unión protectora                         & PB                                          \\ \hline
+Unión protectora aterrizado              & PBE                                         \\ \hline
+Unión protectora no aterrizado           & PBU                                         \\ \hline
+Aterrizado                               & FE                                          \\ \hline
+Unión funcional                          & FB                                          \\ \hline
+\end{tabular}
+\caption{Identificadores alfanuméricos según norma IEC60446.}
+\label{cuadro:IdentificadoresA}
+\end{table}
+
+
+\subsection*{Diagramas eléctricos}
+Los diagramas eléctricos son usados para poder representar, según J. Orrego \cite{orrego2007electricidad}, las conexiones de los circuitos eléctricos, para ello se utilizan símbolos normalizados que especifican claramente lo que se está representando. Según J. Orrego \cite{orrego2007electricidad} existen 3 formas de realizar los esquemas:
+
+ \begin{itemize}
+  \item \textbf{Funcional}: Se utilizan para representar todos los elementos del circuito en líneas verticales, las cuales están comprendidas entre dos líneas paralelas horizontales que representan a los conductores de la línea de alimentación.
+  \item \textbf{Esquema multifilar}: En él se representan todos los conductores del circuito, los cuales se realizan siguiendo aproximadamente el trazado de el montaje a la hora de su implementación.
+  \item \textbf{Esquema unifilar}: Estos se representan en una sola línea todos los elementos en forma unitaria, de igual manera se indican por trazos oblicuos el número de elementos o conductores totales que habrá en cada tramo. 
+  \end{itemize}
+
+Esté último es el utilizado en la realización de los diagramas o esquemas del tablero industrial didáctico en este trabajo.
+
